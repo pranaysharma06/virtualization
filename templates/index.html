@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Deepfake Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Deepfake Generator</h1>
+    <form method="post" enctype="multipart/form-data" action="/upload">
+        <h3>Upload Source Image:</h3>
+        <input type="file" name="source_image" accept="image/jpeg,image/jpg, image/png" required><br><br>
+        <h3>Upload Target Image:</h3>
+        <input type="file" name="target_image" accept="image/jpeg,image/jpg, image/png" required><br><br>
+        <input type="submit" value="Generate Deepfake">
+    </form>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Deepfake Generator</title>
+     <!-- Include Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ </head>
+ <body>
+     <div class="container" >
+         <h3 style = "text-align:center;margin-top:100px;">Deepfake Generator</h2>
+         <form method="post" enctype="multipart/form-data" action="/upload" style = "text-align:center;margin-top:30px;">
+             <h3>Upload Source Image:</h3>
+             <input type="file" name="source_image" accept="image/jpeg,image/jpg, image/png" required><br><br>
+             <h3>Upload Target Image:</h3>
+             <input type="file" name="target_image" accept="image/jpeg,image/jpg, image/png" required><br><br>
+             <input type="submit" value="Generate Deepfake" class="btn btn-primary">
+         </form>
+         {% if error %}
+             <p style="color: red;">{{ error }}</p>
+         {% endif %}
+     </div>
+ 
+     <!-- Include Bootstrap JavaScript -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </body>
+ </html>

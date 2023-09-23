@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deepfake Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Deepfake Result</h1>
+    <h3>Source Image:</h3>
+    <img src="{{ url_for('static', filename='source.jpg') }}" alt="Source Image"><br><br>
+    <h3>Target Image:</h3>
+    <img src="{{ url_for('static', filename='target.jpg') }}" alt="Target Image"><br><br>
+    <h3>Generated Deepfake:</h3>
+    <img src="{{ url_for('static', filename='deepfake.jpg') }}" alt="Deepfake Image"><br><br>
+    <a href="/download" download>Download Deepfake Image</a>
+    <a href="/" style="margin-left: 20px;">Generate Another Deepfake</a>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
