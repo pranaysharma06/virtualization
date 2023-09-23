@@ -1,4 +1,4 @@
-Face Swap Web Application
+DeepFake Generator Web Application
 
 This is a simple web application that allows you to perform face swapping between two images. It uses the Flask framework and runs in a Docker container.
 
@@ -20,8 +20,8 @@ Getting Started
 ---------------
 1. Clone this repository to your local machine:
 
-git clone https://github.com/yourusername/face-swap-app.git
-cd face-swap-app
+git clone https://github.com/pranaysharma06/virtualization
+cd where files are 
 
 2. Build the Docker image:
 docker build -t frontal-face-image .
