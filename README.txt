@@ -41,7 +41,7 @@ Usage
 
 2. Click the "Upload" button to upload a source image and a target image for face swapping. Both images should be in JPG or PNG format.
 
-3. After uploading the images, click the "Swap Faces" button.
+3. After uploading the images, click the "Generate Deepfake" button.
 
 4. The application will process the images and generate a new image with the faces swapped. You can view and download the result.
 
